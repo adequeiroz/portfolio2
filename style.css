@@ -1,0 +1,134 @@
+:root{
+    --fundo: #0B1311;
+    --cartao: #182A26;
+    --texto:  #F4F7F6;
+    --destaque: #10B981;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+a {
+    color: var(--texto): #0f0f17;
+    text-decoration:none;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 8%;
+    position:sticky;
+    top:0;
+    background:var(--fundo);
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 8%;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.destaque {
+    color: var(--destaque);
+}
+
+.foto {
+    width: 120px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--destaque);
+}
+
+.botao {
+    display: inline-block;
+    background: var(--destaque);
+    padding: 12px 28px;
+    border-radius: 50px;
+    color: var(--texto);
+    margin-top: 10px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background: var(--cartao);
+    padding: 24px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 0 2px var(--destaque);
+}
+
+.card h3 {
+    color: var(--destaque);
+
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
+}
+
+.filtros {
+    margin-bottom: 20px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.filtro {
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+     -webkit-appearance: none;  
+    appearance: none;
+    background: #e0e0e0;
+    color: #000000; 
+}
+
+.filtro.ativo {
+    background: var(--destaque);
+    color: white !important;
+}    
+
+#tema {
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+body.claro {
+    --fundo: #F4F7F6;
+    --cartao: #E2EBE8;
+    --texto: #0B1311;
+    --filtro-bg: #D1E2DD;
+    --filtro-texto: #0B1311;
+}

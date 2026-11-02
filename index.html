@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+  rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Adriana Q | Portfólio</title>
+</head>
+<body>
+    <header>
+        <strong>Adriana Q.</strong>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button id="tema">☀️</button>
+    </header>
+    
+    <main>
+        <section>
+            <img src="img/foto.png" alt="Foto Adriana Q de rosto" 
+            class="foto">
+            <h1><span id="saudacao">Olá</span>, sou Adriana. <span class="destaque">Realizo Avaliação de Políticas
+                e Programas Sociais</span></h1>
+            <p>Consultora na Criteria Soluções</p>
+            <a href="#contato" class="botao">Fale comigo</a>
+        </section>
+
+        <section id ="sobre">
+         <h2>Sobre mim</h2> 
+         <p>Gosto de <strong>coordenar, pesquisar e ensinar</strong> e 
+            de explorar novas metodologias de avaliação.</p>
+        <ul id="habilidades" >    
+        </ul>      
+        </section>
+        
+        <section id ="projetos">
+            <h2>Projetos</h2> 
+                <div class = "filtros"> 
+                    <button class="filtro ativo"
+                    data-filtro="Todos">Todos</button>
+                    <button class="filtro"  
+                    data-filtro="Avaliação de Políticas e Programas Sociais">Avaliação de Políticas e Programas Sociais</
+                    button>
+                    <button class="filtro" 
+                    data-filtro="Comércio e Relações Internacionais">Comércio e Relações Internacionais</button>
+                     <button class="filtro" 
+                    data-filtro="Governança, Compliance e Integridade">Governança, Compliance e Integridade</button>
+                </div>
+                <div class="cards" id="cards"></div>
+            </div>
+        </section>
+        
+        <section id="contato">
+            <a href="mailto:adequeiroz70@gmail.com"
+            class="botao">E-mail</a>
+            <a href="https://www.linkedin.com/in/adrianadequeiroz/"
+            target="_blank" class="botao">Linkedin</a>
+            <a href="https://www.instagram.com/adrianadequeiroz_"
+            target="_blank" class="botao">Instagram</a>
+        </section>         
+    </main>
+    <footer>
+            <p>&copy; 2026 Adriana Q. Realizado no Curso de Criação de Portfólios</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
